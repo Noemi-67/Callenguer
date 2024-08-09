@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+}
+h1{color:blue;}
+
+body {
+    background-color: #f3f5fc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+main {
+    display: flex;
+    gap: 80px;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 20px;
+    margin-top: 10px;
+}
+
+.text-area {
+    border: none;
+    color: #040404;
+    text-transform: lowercase;
+    width: 100%;
+    height: 350px;
+    resize: none;
+    background-color: transparent;
+}
+
+.contenedor_entrada {
+    width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.contenedor_entrada>p {
+    color: #7c8188;
+}
+
+.contenedor_salida {
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    padding: 32px;
+    text-align: center;
+}
+
+.contenedor_salida p:first-of-type {
+    font-weight: bold;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensaje {
+    background: white;
+    border: none;
+    color: #0a3871;
+    height: 80%;
+    resize: none;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.btn-encriptar {
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 100%;
+    max-width: 328px;
+}
+
+.btn-desencriptar {
+    background: white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 100%;
+    max-width: 328px;
+}
+
+.copiar {
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: auto;
+}
+
+.informacion {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.final {
+    display: none;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    background-color: violet;
+    margin-top: auto;
+}
+
+@media (width <=1024px) {
+    main {
+        flex-direction: column;
+        margin-bottom: 15px;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .contenedor_entrada {
+        width: 90%;
+    }
+
+    .contenedor_salida img {
+        display: none;
+    }
+
+    .contenedor_salida {
+        width: 90%;
+    }
+}
+
+
+@media (width <=550px) {
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+}

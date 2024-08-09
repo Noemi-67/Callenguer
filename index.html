@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+              rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador</title>
+
+</head>
+<h1>Bienvenidos a mi juego secreto</h1>
+<body>
+    <header>
+        <img class="logo" src="imagenes/logo.svg" alt="logo de alura">
+    </header>
+    <main>
+        <section class="contenedor_entrada">
+            <textarea class="text-area" placeholder="Ingrese el texto aqui"></textarea>
+            <p class="informacion"><img src="imagenes/exclamacion.svg"> Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenedor_salida">
+            <div class="inicio">
+                <img src="imagenes/Muñeco.svg" alt="">
+                <p>Ningun texto fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="final">
+                <textarea class="mensaje"></textarea>
+                <button class="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por Noemi</p>
+    </footer>
+    <script src="script.js"></script>
+
+   
+
+</html>
